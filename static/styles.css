@@ -1,0 +1,115 @@
+.page-header-wrapper {
+    width: calc(100% + 50px);
+    height: 50vh;
+    max-height: 700px;
+    min-height: 600px;
+}
+
+.page-header-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-y: 70%;
+    display: flex;
+    width: calc(100% + 50px);
+    height: 50vh;
+    max-height: 700px;
+    min-height: 600px;
+
+    position: absolute;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    /*border-radius: 50%;*/
+    /*padding: 2em;*/
+}
+
+div.box {
+    padding: 5px 10px 10px 10px;
+    margin: 15px;
+}
+
+.courses .dates {
+    font-weight: bold;
+}
+
+div.details .type {
+    font-weight: bold;
+    display: inline;
+}
+
+.section-divider {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: lightgray;
+    margin: auto;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    width: 400px;
+    overflow:hidden;
+}
+
+.instagram .post {
+    max-width: 540px;
+}
+
+.instagram .post iframe {
+    min-width: 0px !important;
+}
+
+.section.coach {
+    background-color: #FAFAFA;
+}
+
+.coach .name {
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.coach .photo img {
+    background-color: white;
+    width: 100%;
+}
+
+.section-title {
+    font-weight: bolder;
+    font-size: xx-large;
+    color: darkgray;
+}
+
+.intro .intro {
+    font-size: larger;
+    text-align: center;
+}
+
+.intro .intro .header div {
+    display: inline;
+}
+
+.intro .intro h1 .title {
+    text-transform: uppercase;
+}
+
+.intro .intro h1 .addition {
+    font-size: smaller;
+}
+
+
+.footer {
+    background-color: darkgray;
+    color: white;
+}
+
+.footer a:link,
+.footer a:visited,
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    color: black;
+}
+

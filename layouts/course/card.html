@@ -1,0 +1,21 @@
+<div class="container col-sm-12 col-md-8 col-xl-6">
+  <a href="{{.Permalink}}">
+    <h2>{{.Title}}</h2>
+  </a>
+  <div class="details">
+    <div class="dates">
+      {{ dateFormat "2.1.2006" .Params.startDate }}
+      &mdash;
+      {{ dateFormat "2.1.2006" .Params.endDate }}
+    </div>
+    <div class="time">
+      {{.Params.time | safeHTML }}
+    </div>
+    <div class="place">
+      {{.Params.place | safeHTML }}
+    </div>
+    <div class="price">
+      {{.Params.price | safeHTML }}
+    </div>
+  </div>
+</div>

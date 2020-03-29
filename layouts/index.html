@@ -1,0 +1,57 @@
+{{ define "main" }}
+  <main aria-role="main">
+
+    <div class="intro container">
+      <div class="row pt-5 pb-3 align-content-center">
+        <div class="col intro justify-content-center">
+          <h1 class="header">
+            <div class="title">Nordic Flow Acroyoga</div>
+            <div class="addition">– läsnäoloa, iloa ja liikettä</div>
+          </h1>
+          {{.Content}}
+        </div>
+      </div>
+    </div>
+
+<!--
+    <div class="section course m-0 p-5">
+      <div class="container course mt-5 mb-5">
+        <div class="row">
+          {{ range where .Site.RegularPages "Section" "course" }}
+            {{ .Render "card" }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+-->
+    <div class="section coach container-fluid">
+      <div class="row m-2">
+        <h2 class="section-title">valmentajat</h2>
+      </div>
+      <div class="row coach m-2 justify-content-center">
+        <div class="container justify-content-center">
+            {{ range where .Site.RegularPages "Section" "coach" }}
+                <div class="coach col-sm-12">
+                    {{ .Render "card" }}
+                </div>
+            {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <div class="section some container-fluid">
+      <div class="row m-2">
+        <h2 class="section-title">@nordicflowacroyoga</h2>
+      </div>
+      <div class="row instagram m-2 justify-content-center">
+        <div class="container justify-content-center">
+          <div class="row justify-content-center">
+            {{ range where .Site.RegularPages "Section" "ig" }}
+              {{ .Render "card" }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}

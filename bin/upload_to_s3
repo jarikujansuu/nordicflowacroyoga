@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo \
+"Upload web app into S3 bucket. Before running this script you should build the app.
+
+Usage: $0 
+  -b <bucket>: Bucket to upload to. Most likely the same as the service URL.
+  -p <profile>: AWS profile to use. Optional."
+}
+
+while getopts "hp:b:s" options
+do
+  case ${options} in
+    h) usage; exit 0 ;;
+    p) PROFILE=${OPTARG} ;;
+    b) BUCKET=${OPTARG} ;;
+    *) usage; exit 1 ;;
+  esac
+done
+
+if [[ -z ${BUCKET} ]]
+then
+    usage
+    exit 1;
+fi
+
+if [[ -n ${PROFILE} ]]
+then
+  PROFILE="--profile ${PROFILE}"
+fi
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )/.."
+
+aws s3 sync "${DIR}/public" "s3://${BUCKET}" ${PROFILE} --exclude img/* --cache-control public,max-age=0
+aws s3 sync "${DIR}/public/img" "s3://${BUCKET}/img" ${PROFILE} --cache-control public,max-age=86400
