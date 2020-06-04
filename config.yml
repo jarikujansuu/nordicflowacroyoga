@@ -6,5 +6,18 @@ params:
   email: nordicflowacroyoga@gmail.com
   instagram: nordicflowacroyoga
   facebook: nordicflowacroyoga
+  phone: +358 .. ......
   keywords: nordic flow acroyoga,nordic flow,acroyoga,yoga
   description: Nordic Flow Acroyoga – läsnäoloa, iloa ja liikettä
+
+DefaultContentLanguage: fi
+languages:
+  fi:
+    params:
+      home: Etusivu
+      description: Nordic Flow Acroyoga – läsnäoloa, iloa ja liikettä
+
+  en:
+    params:
+      home: Home
+      description: Nordic Flow Acroyoga - presense, joy and movement

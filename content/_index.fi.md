@@ -1,5 +1,6 @@
 ---
-Title: Nordic Flow Acroyoga – läsnäoloa, iloa ja liikettä
+Title: Nordic Flow Acroyoga
+SubTitle: läsnäoloa, iloa ja liikettä
 background: /img/hero.png
 ---
 Acroyoga on innostava, energisoiva ja yhteisöllisyyttä lisäävä laji, joka kehittää kehonhallintaa, 

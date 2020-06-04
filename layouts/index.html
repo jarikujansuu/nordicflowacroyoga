@@ -1,17 +1,67 @@
+{{ define "navbar" }}
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">{{ .Site.Params.home }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#valmentajat">{{ (.Site.GetPage "/_valmentajat").Title }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#some">{{ (.Site.GetPage "/_some").Title }}</a>
+          </li>
+          {{ range .Translations }}
+          <li class="language nav-item float-right">
+            <a class="nav-link" href="{{ .Permalink }}">{{ .Lang }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+  </div>
+{{ end }}
+
 {{ define "main" }}
   <main aria-role="main">
-
-    <div class="intro container">
-      <div class="row pt-5 pb-3 align-content-center">
-        <div class="col intro justify-content-center">
-          <h1 class="header">
-            <div class="title">Nordic Flow Acroyoga</div>
-            <div class="addition">– läsnäoloa, iloa ja liikettä</div>
-          </h1>
-          {{.Content}}
+    <div class="section intro container pt-5">
+      <div class="row align-content-center">
+        <div class="col justify-content-center">
+          <div class="header">
+            <h1 class="title">{{ .Title }}</h1>
+            <div class="tagline">{{ .Params.SubTitle }}</div>
+          </div>
+            <div class="content">
+              {{.Content}}
+            </div>
         </div>
       </div>
     </div>
+
+    {{ with .Site.GetPage "/_meista" }}
+    <div class="section us container pt-5" id="me">
+      <div class="row align-content-center">
+        <div class="col justify-content-center">
+          <div class="header" >
+            <h1 class="title">{{ .Title }}</h1>
+            <div class="addition">{{ .Params.SubTitle }}</div>
+          </div>
+          <div class="content">
+            {{.Content}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
 
 <!--
     <div class="section course m-0 p-5">
@@ -24,24 +74,30 @@
       </div>
     </div>
 -->
-    <div class="section coach container-fluid">
+    {{ with .Site.GetPage "/_valmentajat" }}
+    <div class="section coaches container-fluid pt-5" id="valmentajat">
       <div class="row m-2">
-        <h2 class="section-title">valmentajat</h2>
+        <h1 class="section-title col">{{ .Title }}</h1>
       </div>
-      <div class="row coach m-2 justify-content-center">
+      <div class="row m-2 justify-content-center">
         <div class="container justify-content-center">
-            {{ range where .Site.RegularPages "Section" "coach" }}
-                <div class="coach col-sm-12">
-                    {{ .Render "card" }}
-                </div>
-            {{ end }}
+          <div class="content">
+            {{.Content}}
+          </div>
+          {{ range where .Site.RegularPages "Section" "coach" }}
+            <div class="coach col-sm-12">
+              {{ .Render "card" }}
+            </div>
+          {{ end }}
         </div>
       </div>
     </div>
+    {{ end }}
 
-    <div class="section some container-fluid">
+    {{ with .Site.GetPage "/_some" }}
+    <div class="section some container-fluid pt-5" id="some">
       <div class="row m-2">
-        <h2 class="section-title">@nordicflowacroyoga</h2>
+        <h1 class="section-title col">@nordicflowacroyoga</h1>
       </div>
       <div class="row instagram m-2 justify-content-center">
         <div class="container justify-content-center">
@@ -53,5 +109,6 @@
         </div>
       </div>
     </div>
+    {{ end }}
   </main>
 {{ end }}

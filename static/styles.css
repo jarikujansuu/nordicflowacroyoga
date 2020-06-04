@@ -1,3 +1,25 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-family: 'Oswald', sans-serif;
+    color: #3f791c;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.tagline {
+    font-size: x-large;
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+    font-family: 'Libre Baskerville', serif;
+}
+
 .page-header-wrapper {
     width: calc(100% + 50px);
     height: 50vh;
@@ -59,57 +81,97 @@ div.details .type {
     min-width: 0px !important;
 }
 
-.section.coach {
-    background-color: #FAFAFA;
-}
+/*.section.coach {*/
+/*    background-color: #FAFAFA;*/
+/*}*/
 
 .coach .name {
     font-weight: bolder;
     font-size: x-large;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+    font-family: 'Oswald', sans-serif;
+    color: #3f791c;
 }
 
-.coach .photo img {
+.coach img.photo {
     background-color: white;
     width: 100%;
 }
 
-.section-title {
-    font-weight: bolder;
-    font-size: xx-large;
-    color: darkgray;
+.coach {
+    text-align: left;
 }
 
-.intro .intro {
-    font-size: larger;
+.section {
     text-align: center;
+    font-size: large;
 }
 
-.intro .intro .header div {
-    display: inline;
+.section-title {
 }
-
-.intro .intro h1 .title {
-    text-transform: uppercase;
-}
-
-.intro .intro h1 .addition {
-    font-size: smaller;
-}
-
 
 .footer {
-    background-color: darkgray;
-    color: white;
+    background-color: #fcd34b;
+    color: #3f791c;
 }
 
 .footer a:link,
 .footer a:visited,
 .footer a {
-    color: white;
+    color: #3f791c;
 }
 
 .footer a:hover {
     color: black;
 }
+
+.navbar {
+    background-color: #fcd34b;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float:none;
+        margin:0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav > li {
+        display: inline-block;
+        float:none;
+    }
+
+    .nav-item.language {
+       border-left: 1px solid #3f791c;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-item.language {
+       border-top: 1px solid #3f791c;
+    }
+}
+
+/*.navbar .navbar-nav {*/
+/*  float: none;*/
+/*  vertical-align: top;*/
+/*}*/
+
+/*.navbar-nav {*/
+/*    float:none;*/
+/*    margin:0 auto;*/
+/*    display: block;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.navbar-nav > li {*/
+/*    !*display: inline-block;*!*/
+/*    !*float:none;*!*/
+/*}*/
+
+/*.nav-link {*/
+/*    color: #3f791c !important;*/
+/*}*/
 

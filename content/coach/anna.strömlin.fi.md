@@ -1,8 +1,8 @@
 ---
-name: Anna
+name: Anna Strömlin
 img: /img/coach/anna.jpg
 ---
-Anna Strömlin on harrastanut akrojoogaa vuodesta 2015. Hän on saanut oppia
+Anna on harrastanut akrojoogaa vuodesta 2015. Hän on saanut oppia
 monilta akrojoogaopettajilta, kuten Jeppe Skovgaardilta, Jill Cambellilta,
 Heidi Blaisilta ja Daniel Scottilta. Hän on koulutukseltaan myös erityisopettaja.
 Annan mielestä akrojoogassa hienointa on, että se voi olla yhtä aikaa
