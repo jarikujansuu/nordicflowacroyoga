@@ -1,4 +1,4 @@
-import { CloudFrontWebDistribution, SecurityPolicyProtocol, SSLMethod, } from '@aws-cdk/aws-cloudfront';
+import { CloudFrontWebDistribution, OriginProtocolPolicy, SecurityPolicyProtocol, SSLMethod, } from '@aws-cdk/aws-cloudfront';
 import { ARecord, HostedZone, HostedZoneAttributes, RecordTarget } from '@aws-cdk/aws-route53';
 import { CloudFrontTarget } from '@aws-cdk/aws-route53-targets';
 import { Bucket } from '@aws-cdk/aws-s3';
@@ -22,6 +22,7 @@ export class NordicFlowAcroyogaSite extends Stack {
     const bucket = new Bucket(this, 'Bucket', {
       bucketName: props.domainName,
       removalPolicy: RemovalPolicy.DESTROY,
+      websiteIndexDocument: 'index.html',
     });
     bucket.grantPublicAccess();
 
@@ -34,8 +35,9 @@ export class NordicFlowAcroyogaSite extends Stack {
       },
       originConfigs: [
         {
-          s3OriginSource: {
-            s3BucketSource: bucket,
+          customOriginSource: {
+            domainName: bucket.bucketWebsiteDomainName,
+            originProtocolPolicy: OriginProtocolPolicy.HTTP_ONLY,
           },
           behaviors: [{ ...CloudFrontOriginBehavior.S3StaticShort, isDefaultBehavior: true }],
         },
