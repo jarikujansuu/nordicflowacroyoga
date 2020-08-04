@@ -1,6 +1,6 @@
 baseURL: "https://preview.nordicflowacroyoga.fi"
 languageCode: "fi-fi"
-title: "Nordic Flow Acroyoga – läsnäoloa, iloa ja liikettä"
+title: "Nordic Flow Acroyoga"
 params:
   logo: /img/logo-trans.png
   email: nordicflowacroyoga@gmail.com
@@ -8,16 +8,14 @@ params:
   facebook: nordicflowacroyoga
   phone: +358 .. ......
   keywords: nordic flow acroyoga,nordic flow,acroyoga,yoga
-  description: Nordic Flow Acroyoga – läsnäoloa, iloa ja liikettä
+  description: Nordic Flow Acroyoga
 
 DefaultContentLanguage: fi
 languages:
   fi:
     params:
       home: Etusivu
-      description: Nordic Flow Acroyoga – läsnäoloa, iloa ja liikettä
 
   en:
     params:
       home: Home
-      description: Nordic Flow Acroyoga - presense, joy and movement
