@@ -75,7 +75,7 @@
     </div>
 -->
     {{ with .Site.GetPage "/_valmentajat" }}
-    <div class="section coaches container-fluid pt-5" id="valmentajat">
+    <div class="section teachers container-fluid pt-5" id="valmentajat">
       <div class="row m-2">
         <h1 class="section-title col">{{ .Title }}</h1>
       </div>
@@ -84,8 +84,8 @@
           <div class="content">
             {{.Content}}
           </div>
-          {{ range where .Site.RegularPages "Section" "coach" }}
-            <div class="coach col-sm-12">
+          {{ range where .Site.RegularPages "Section" "teacher" }}
+            <div class="teacher col-sm-12">
               {{ .Render "card" }}
             </div>
           {{ end }}

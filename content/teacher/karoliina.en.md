@@ -1,6 +1,6 @@
 ---
 name: Karoliina Lämsä
-img: /img/coach/karoliina.jpg
+img: /img/teacher/karoliina.jpg
 weight: 100
 ---
 A blend of athleticism, softness and creativity, Karoliina is known for the supportive environment 

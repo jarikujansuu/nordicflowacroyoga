@@ -1,6 +1,6 @@
 ---
 name: Saija Sarell
-img: /img/coach/saija.jpg
+img: /img/teacher/saija.jpg
 ---
 Saija is an Acroyoga Montreal and Ryt 200 certified Hatha, Hatha Vinyasa and Yin yoga teacher. 
 In both yoga and acroyoga, Saija is fascinated by the vitality, energy and connection that comes from 

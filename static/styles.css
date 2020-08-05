@@ -83,11 +83,11 @@ div.details .type {
     min-width: 0px !important;
 }
 
-/*.section.coach {*/
+/*.section.teacher {*/
 /*    background-color: #FAFAFA;*/
 /*}*/
 
-.coach .name {
+.teacher .name {
     font-weight: bolder;
     font-size: x-large;
     /*text-transform: uppercase;*/
@@ -95,12 +95,12 @@ div.details .type {
     color: #3f791c;
 }
 
-.coach img.photo {
+.teacher img.photo {
     background-color: white;
     width: 100%;
 }
 
-.coach {
+.teacher {
     text-align: left;
 }
 

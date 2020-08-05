@@ -1,6 +1,6 @@
 ---
 name: Saija Sarell
-img: /img/coach/saija.jpg
+img: /img/teacher/saija.jpg
 ---
 Saija on Acroyoga Montreal- sekä Ryt 200-sertifioitu Hatha, Hatha Vinyasa ja Yin
 jooga opettaja. Niin joogassa kuin acroyogassakin Saijaa kiehtoo elinvoima, energia ja

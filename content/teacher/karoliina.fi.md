@@ -1,6 +1,6 @@
 ---
 name: Karoliina Lämsä
-img: /img/coach/karoliina.jpg
+img: /img/teacher/karoliina.jpg
 weight: 100
 ---
 Karoliina on Acroyoga Montreal- ja Partner Acrobatics- opettaja. Acroyogaa hän on harrastanut 

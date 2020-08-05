@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-coaches:
+teachers:
     - karoliina
 startDate: {{ .Date }}
 endDate: {{ .Date }}
