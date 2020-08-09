@@ -8,6 +8,6 @@ expiryDate:
 time:
 place:
 price:
-ticketsUrl:
 draft: false
+signin: https://holvi.com/shop/nordicflowacroyoga/
 ---

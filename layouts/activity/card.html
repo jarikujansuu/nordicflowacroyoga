@@ -1,21 +1,37 @@
-<div class="container col-sm-12 col-md-8 col-xl-6">
-  <a href="{{.Permalink}}">
-    <h2>{{.Title}}</h2>
-  </a>
-  <div class="details">
-    <div class="dates">
+<div class="activity activity-card container col-sm-12 pb-5">
+  <div class="row title">
+    <h3 class="col-sm-12">{{.Title}}</h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 content">
+      {{.Content}}
+    </div>
+  </div>
+  <div class="details row">
+    <div class="place col-sm-12">
+      <i class="fas fa-map-marker"></i>
+      <a href="https://maps.google.fi/maps?f=q&q={{ .Params.location.address}}">
+        {{.Params.location.name }}
+      </a>
+    </div>
+    <div class="dates col-sm-12">
+      <i class=" fas fa-calendar-day"></i>
       {{ dateFormat "2.1.2006" .Params.startDate }}
-      &mdash;
-      {{ dateFormat "2.1.2006" .Params.endDate }}
+      {{ if .Params.endDate }}
+        &mdash;
+        {{ dateFormat "2.1.2006" .Params.endDate }},
+      {{ end }}
     </div>
-    <div class="time">
-      {{.Params.time | safeHTML }}
+    <div class="time col-sm-12">
+      <i class="fas fa-clock"></i>
+      {{.Params.time }}
     </div>
-    <div class="place">
-      {{.Params.place | safeHTML }}
+    <div class="price col-sm-12">
+      <i class="fas fa-euro-sign"></i>
+      {{.Params.price }}
     </div>
-    <div class="price">
-      {{.Params.price | safeHTML }}
+    <div class="signin col-sm-12">
+      <a href="{{ .Params.signin }}">{{ i18n "signin" }}</a>
     </div>
   </div>
 </div>

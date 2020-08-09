@@ -2,12 +2,29 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-h1 {
-    text-transform: uppercase;
-    font-size: xx-large;
+h1, h2, h3, h4, h5 {
     font-family: 'Oswald', sans-serif;
     color: #3f791c;
 }
+
+h1 {
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: large;
+}
+
+h4 {
+    font-size: large;
+}
+
 
 p {
     font-family: 'Roboto Condensed', sans-serif;
@@ -177,3 +194,19 @@ div.details .type {
 /*    color: #3f791c !important;*/
 /*}*/
 
+.details {
+    color: #3f791c;
+}
+
+.activity {
+    text-align: left;
+}
+
+.activity .title {
+    text-align: center;
+}
+
+.covid-info {
+    color: #3f791c;
+    background-color: #fcd34b !important;
+}

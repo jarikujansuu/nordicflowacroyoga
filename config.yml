@@ -6,7 +6,7 @@ params:
   email: nordicflowacroyoga@gmail.com
   instagram: nordicflowacroyoga
   facebook: nordicflowacroyoga
-  phone: +358 .. ......
+  phone: +358 40 0343418
   keywords: nordic flow acroyoga,nordic flow,acroyoga,yoga
   description: Nordic Flow Acroyoga
 
@@ -15,7 +15,9 @@ languages:
   fi:
     params:
       home: Etusivu
+      signin: Ilmoittaudu
 
   en:
     params:
       home: Home
+      signin: Signin
