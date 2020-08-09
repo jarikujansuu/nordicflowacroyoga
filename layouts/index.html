@@ -17,6 +17,9 @@
             <a class="nav-link" href="#activities">{{ (.Site.GetPage "/_activities").Title }}</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#acroyoga">{{ (.Site.GetPage "/_acroyoga").Title }}</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#teachers">{{ (.Site.GetPage "/_teachers").Title }}</a>
           </li>
           <li class="nav-item">
@@ -85,18 +88,24 @@
     </div>
     {{ end }}
 
-
-<!--
-    <div class="section course m-0 p-5">
-      <div class="container course mt-5 mb-5">
-        <div class="row">
-          {{ range where .Site.RegularPages "Section" "course" }}
-            {{ .Render "card" }}
-          {{ end }}
+    {{ with .Site.GetPage "/_acroyoga" }}
+    <div class="section about-acroyoga container-fluid pt-5" id="acroyoga">
+      <div class="row m-2">
+        <h1 class="section-title col">{{ .Title }}</h1>
+      </div>
+      <div class="row m-2 justify-content-center">
+        <div class="container justify-content-center">
+          <div class="row">
+            <div class="pull-left content col-sm-12">
+              <img class="img-fluid float-left photo shadow col-sm-12 col-md-5 p-3 mr-4" src="{{ .Params.img | absURL }}">
+              {{.Content}}
+            </div>
+          </div>
         </div>
       </div>
     </div>
--->
+    {{ end }}
+
     {{ with .Site.GetPage "/_teachers" }}
     <div class="section teachers container-fluid pt-5" id="teachers">
       <div class="row m-2">
