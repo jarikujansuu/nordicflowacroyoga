@@ -2,8 +2,8 @@
 Title: Akrojoogasta
 img: img/IMG_4852-01.jpeg
 ---
-*“Akrojoogassa minulle tärkeintä on  yhdessä tekemisen riemu, hetkessä oleminen ja 
-tasapainon löytäminen itseeni ja toiseen.”* **- Karoliina**
+*“Akrojoogassa minulle tärkeintä on  yhdessä tekemisen riemu, hetkessä oleminen ja tasapainon löytäminen.”* 
+**- Karoliina**
 
 Akrojooga on kokonaisvaltainen laji. Se lisää lihaskuntoa ja venyvyyttä ja parantaa yleistä 
 liikunnallisuutta. Akrojoogassa pyrkimyksenä on saavutta flow-tila, jolloin akrojoogaa tekevä 
@@ -15,9 +15,7 @@ Lentäminen opettaa rohkeutta ja luottamusta. Basen roolissa opit kannattelemaan
 hänelle tukea. Spotterilla on tärkeä rooli varmistaa lentäjän ja basen turvallisuus. Yleensä 
 harjoittelemme kaikkia rooleja, mutta mahdollisuus on myös erikoistua lentäjäksi tai beissiksi.
 
-Tunneilla teemme harjoituksia sekä koko ryhmän kanssa että yksin ja pienissä ryhmissä. Akrojooga 
-tunneilla teemme usein myös kehotietoisuus- ja liikkuvuusharjoituksia, käsilläseisontaa, luovaa 
-liikettä sekä leikkisiä, lämmittäviä pelejä ja rentoutusharjoituksia.
+Tunneilla teemme harjoituksia yksin sekä 2-4 henkilön ryhmissä. Akrojoogatunneilla teemme usein myös 
+kehotietoisuus- ja liikkuvuusharjoituksia, käsilläseisontaa, leikkisiä, lämmittäviä pelejä ja rentoutusharjoituksia.
 
-Akrojooga on hauska laji, jossa tärkeä merkitys on heittäytyä hetkeen, yhteyteen toisen ihmisen kanssa. 
-Toisiamme kannustaen ja jokaisen omaa liikettä arvostaen. 
+Akrojooga on hauska laji, jossa heittäydytään hetkeen, toisiamme kannustaen ja jokaisen omaa liikettä arvostaen.  

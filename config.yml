@@ -11,6 +11,7 @@ params:
   description: Nordic Flow Acroyoga
 
 DefaultContentLanguage: fi
+disableLanguages: ["en"]
 languages:
   fi:
     params:

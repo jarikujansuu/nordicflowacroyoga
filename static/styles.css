@@ -211,7 +211,18 @@ div.details .type {
     text-align: center;
 }
 
-.covid-info {
-    color: #3f791c;
+.covid-info, .covid-info a {
+    color: darkred;
     background-color: #fcd34b !important;
+}
+
+.list-of-dates, .list-of-dates .date {
+    display: inline;
+}
+.list-of-dates .date:nth-child(n+2):before {
+    content: ", ";
+}
+
+.details {
+    text-align: left;
 }

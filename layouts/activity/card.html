@@ -14,12 +14,27 @@
         {{.Params.location.name }}
       </a>
     </div>
+    {{ if .Params.teacher_names }}
+    <div class="teachers col-sm-12">
+      <i class="fas fa-user"></i>
+      {{ .Params.teacher_names}}
+    </div>
+    {{ end }}
     <div class="dates col-sm-12">
       <i class=" fas fa-calendar-day"></i>
-      {{ dateFormat "2.1.2006" .Params.startDate }}
-      {{ if .Params.endDate }}
-        &mdash;
-        {{ dateFormat "2.1.2006" .Params.endDate }},
+      {{ if .Params.dates.start }}
+        {{ dateFormat "2.1.2006" .Params.dates.start }}
+        {{ if .Params.dates.end }}
+          &mdash;
+          {{ dateFormat "2.1.2006" .Params.dates.end }},
+        {{ end }}
+      {{ end }}
+      {{ if .Params.dates.dates }}
+      <div class="list-of-dates">
+        {{ range .Params.dates.dates }}
+          <div class="date">{{ dateFormat "2.1.2006" . }}</div>
+        {{ end }}
+      </div>
       {{ end }}
     </div>
     <div class="time col-sm-12">
