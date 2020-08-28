@@ -12,13 +12,13 @@ const account = {
 
 const app = new cdk.App();
 
-new NordicFlowAcroyogaSite(app, 'prod-nordicflowacroyoga-site', {
+new NordicFlowAcroyogaSite(app, 'production-site', {
   ...account,
   hostedZone: {
     hostedZoneId: 'Z00389013O76EFC1KFHDI',
     zoneName: 'nordicflowacroyoga.fi',
   },
-  domainName: 'preview.nordicflowacroyoga.fi',
+  domainName: 'nordicflowacroyoga.fi',
   cloudFrontCertificate: {
     certificateArn:
       'arn:aws:acm:us-east-1:451440606702:certificate/006ee609-7653-491f-993a-927434aaa052',
