@@ -13,17 +13,28 @@
           <li class="nav-item">
             <a class="nav-link" href="#">{{ .Site.Params.home }}</a>
           </li>
+          {{ with .Site.GetPage "/_activities" }}
           <li class="nav-item">
-            <a class="nav-link" href="#activities">{{ (.Site.GetPage "/_activities").Title }}</a>
+            <a class="nav-link" href="#activities">{{ .Title }}</a>
           </li>
+          {{ end }}
+          {{ with .Site.GetPage "/_acroyoga" }}
           <li class="nav-item">
-            <a class="nav-link" href="#acroyoga">{{ (.Site.GetPage "/_acroyoga").Title }}</a>
+            <a class="nav-link" href="#acroyoga">{{ .Title }}</a>
           </li>
+          {{ end }}
+          {{ with .Site.GetPage "/_teachers" }}
+            <li class="nav-item">
+              <a class="nav-link" href="#teachers">{{ .Title }}</a>
+            </li>
+          {{ end }}
+          {{ with .Site.GetPage "/_some" }}
+            <li class="nav-item">
+              <a class="nav-link" href="#some">{{ .Title }}</a>
+            </li>
+          {{ end }}
           <li class="nav-item">
-            <a class="nav-link" href="#teachers">{{ (.Site.GetPage "/_teachers").Title }}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#some">{{ (.Site.GetPage "/_some").Title }}</a>
+            <a class="nav-link" href="{{ .Site.Params.shopUrl }}">{{ .Site.Params.shop }}</a>
           </li>
           {{ range .Translations }}
           <li class="language nav-item float-right">

@@ -9,6 +9,7 @@ params:
   phone: +358 40 0343418
   keywords: nordic flow acroyoga,nordic flow,acroyoga,yoga
   description: Nordic Flow Acroyoga
+  shopUrl: https://holvi.com/shop/nordicflowacroyoga/
 
 DefaultContentLanguage: fi
 disableLanguages: ["en"]
@@ -17,8 +18,10 @@ languages:
     params:
       home: Etusivu
       signin: Ilmoittaudu
+      shop: Kauppa
 
   en:
     params:
       home: Home
       signin: Signin
+      shop: Shop
