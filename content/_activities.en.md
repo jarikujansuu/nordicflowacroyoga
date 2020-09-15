@@ -1,0 +1,3 @@
+---
+Title: Classes and workshops
+---

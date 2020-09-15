@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo \
+"Build and deploy site
+
+Usage: $0 
+  -p <profile>: AWS profile to use. Optional."
+}
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+cd "${DIR}/.." && hugo
+
+"${DIR}/upload_to_s3" -b "preview.nordicflowacroyoga.fi" $*

@@ -13,11 +13,28 @@
           <li class="nav-item">
             <a class="nav-link" href="#">{{ .Site.Params.home }}</a>
           </li>
+          {{ with .Site.GetPage "/_activities" }}
           <li class="nav-item">
-            <a class="nav-link" href="#valmentajat">{{ (.Site.GetPage "/_valmentajat").Title }}</a>
+            <a class="nav-link" href="#activities">{{ .Title }}</a>
           </li>
+          {{ end }}
+          {{ with .Site.GetPage "/_acroyoga" }}
           <li class="nav-item">
-            <a class="nav-link" href="#some">{{ (.Site.GetPage "/_some").Title }}</a>
+            <a class="nav-link" href="#acroyoga">{{ .Title }}</a>
+          </li>
+          {{ end }}
+          {{ with .Site.GetPage "/_teachers" }}
+            <li class="nav-item">
+              <a class="nav-link" href="#teachers">{{ .Title }}</a>
+            </li>
+          {{ end }}
+          {{ with .Site.GetPage "/_some" }}
+            <li class="nav-item">
+              <a class="nav-link" href="#some">{{ .Title }}</a>
+            </li>
+          {{ end }}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .Site.Params.shopUrl }}">{{ .Site.Params.shop }}</a>
           </li>
           {{ range .Translations }}
           <li class="language nav-item float-right">
@@ -46,8 +63,8 @@
       </div>
     </div>
 
-    {{ with .Site.GetPage "/_meista" }}
-    <div class="section us container pt-5" id="me">
+    {{ with .Site.GetPage "/_activities" }}
+    <div class="section activities container pt-5" id="activities">
       <div class="row align-content-center">
         <div class="col justify-content-center">
           <div class="header" >
@@ -55,27 +72,55 @@
             <div class="addition">{{ .Params.SubTitle }}</div>
           </div>
           <div class="content">
+            {{ with .Site.GetPage "/_covid" }}
+              <div class="">
+                <a class="btn btn-primary col-sm-12 covid-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <i class="fas fa-chevron-down"></i>
+                  {{ .Title }}. {{ i18n "more" }}
+                </a>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    {{ .Content }}
+                  </div>
+                </div>
+              </div>
+            {{ end }}
             {{.Content}}
+          </div>
+          <hr class="dashed"/>
+          <div class="activities row">
+<!--            {-{ range where (.Site.RegularPages.ByParam "startDate") "Section" "activity" }-}-->
+            {{ range where (.Site.RegularPages.ByWeight) "Section" "activity" }}
+              <div class="activity col-sm-12 col-md-6 col-lg-4">
+                {{ .Render "card" }}
+              </div>
+            {{ end }}
           </div>
         </div>
       </div>
     </div>
     {{ end }}
 
-
-<!--
-    <div class="section course m-0 p-5">
-      <div class="container course mt-5 mb-5">
-        <div class="row">
-          {{ range where .Site.RegularPages "Section" "course" }}
-            {{ .Render "card" }}
-          {{ end }}
+    {{ with .Site.GetPage "/_acroyoga" }}
+    <div class="section about-acroyoga container-fluid pt-5" id="acroyoga">
+      <div class="row m-2">
+        <h1 class="section-title col">{{ .Title }}</h1>
+      </div>
+      <div class="row m-2 justify-content-center">
+        <div class="container justify-content-center">
+          <div class="row">
+            <div class="pull-left content col-sm-12">
+              <img class="img-fluid float-left photo shadow col-sm-12 col-md-5 p-3 mr-4" src="{{ .Params.img | absURL }}">
+              {{.Content}}
+            </div>
+          </div>
         </div>
       </div>
     </div>
--->
-    {{ with .Site.GetPage "/_valmentajat" }}
-    <div class="section coaches container-fluid pt-5" id="valmentajat">
+    {{ end }}
+
+    {{ with .Site.GetPage "/_teachers" }}
+    <div class="section teachers container-fluid pt-5" id="teachers">
       <div class="row m-2">
         <h1 class="section-title col">{{ .Title }}</h1>
       </div>
@@ -84,8 +129,8 @@
           <div class="content">
             {{.Content}}
           </div>
-          {{ range where .Site.RegularPages "Section" "coach" }}
-            <div class="coach col-sm-12">
+          {{ range where .Site.RegularPages "Section" "teacher" }}
+            <div class="teacher col-sm-12">
               {{ .Render "card" }}
             </div>
           {{ end }}

@@ -2,12 +2,33 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-h1 {
-    text-transform: uppercase;
-    font-size: xx-large;
+h1, h2, h3, h4, h5 {
     font-family: 'Oswald', sans-serif;
     color: #3f791c;
 }
+
+h1 {
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: large;
+}
+
+h4 {
+    font-size: large;
+}
+
+h1, h2, h3, h4, h5, h6, .tagline {
+    text-align: center;
+}
+
 
 p {
     font-family: 'Roboto Condensed', sans-serif;
@@ -83,29 +104,30 @@ div.details .type {
     min-width: 0px !important;
 }
 
-/*.section.coach {*/
+/*.section.teacher {*/
 /*    background-color: #FAFAFA;*/
 /*}*/
 
-.coach .name {
+.teacher .name {
     font-weight: bolder;
     font-size: x-large;
     /*text-transform: uppercase;*/
     font-family: 'Oswald', sans-serif;
     color: #3f791c;
+    text-align: left;
 }
 
-.coach img.photo {
+.photo img {
     background-color: white;
     width: 100%;
 }
 
-.coach {
-    text-align: left;
-}
+/*.teacher {*/
+/*    text-align: left;*/
+/*}*/
 
 .section {
-    text-align: center;
+    text-align: justify;
     font-size: large;
 }
 
@@ -177,3 +199,30 @@ div.details .type {
 /*    color: #3f791c !important;*/
 /*}*/
 
+.details {
+    color: #3f791c;
+}
+
+.activity {
+    text-align: justify;
+}
+
+.activity .title {
+    text-align: center;
+}
+
+.covid-info, .covid-info a {
+    color: darkred;
+    background-color: #fcd34b !important;
+}
+
+.list-of-dates, .list-of-dates .date {
+    display: inline;
+}
+.list-of-dates .date:nth-child(n+2):before {
+    content: ", ";
+}
+
+.details {
+    text-align: left;
+}

@@ -3,7 +3,7 @@ Title: Nordic Flow Acroyoga
 SubTitle: läsnäoloa, iloa ja liikettä
 background: /img/hero.png
 ---
-Acroyoga on innostava, energisoiva ja yhteisöllisyyttä lisäävä laji, joka kehittää kehonhallintaa, 
+Akrojooga on innostava, energisoiva ja yhteisöllisyyttä lisäävä laji, joka kehittää kehonhallintaa, 
 tasapainoa ja liikkuvuutta. Siinä yhdistyvät akrobatian leikkisyys ja parityöskentely joogasta 
 tuttuihin liikkeisiin, läsnäoloon ja hengitykseen. 
 

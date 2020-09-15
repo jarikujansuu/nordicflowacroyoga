@@ -1,6 +1,6 @@
 ---
 name: Anna Strömlin
-img: /img/coach/anna.jpg
+img: /img/teacher/anna.jpg
 ---
 Anna has been practicing acroyoga since 2015. She has learned from many acroyoga teachers, 
 including Jeppe Skovgaard, Jill Cambell, Heidi Blais and Daniel Scott. She is also a special education 

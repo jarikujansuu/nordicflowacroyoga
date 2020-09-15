@@ -1,4 +1,4 @@
-baseURL: "https://preview.nordicflowacroyoga.fi"
+baseURL: "https://nordicflowacroyoga.fi"
 languageCode: "fi-fi"
 title: "Nordic Flow Acroyoga"
 params:
@@ -6,16 +6,22 @@ params:
   email: nordicflowacroyoga@gmail.com
   instagram: nordicflowacroyoga
   facebook: nordicflowacroyoga
-  phone: +358 .. ......
+  phone: +358 40 0343418
   keywords: nordic flow acroyoga,nordic flow,acroyoga,yoga
   description: Nordic Flow Acroyoga
+  shopUrl: https://holvi.com/shop/nordicflowacroyoga/
 
 DefaultContentLanguage: fi
+disableLanguages: ["en"]
 languages:
   fi:
     params:
       home: Etusivu
+      signin: Ilmoittaudu
+      shop: Kauppa
 
   en:
     params:
       home: Home
+      signin: Signin
+      shop: Shop

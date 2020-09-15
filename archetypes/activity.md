@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-coaches:
+teachers:
     - karoliina
 startDate: {{ .Date }}
 endDate: {{ .Date }}
@@ -8,6 +8,6 @@ expiryDate:
 time:
 place:
 price:
-ticketsUrl:
 draft: false
+signin: https://holvi.com/shop/nordicflowacroyoga/
 ---
