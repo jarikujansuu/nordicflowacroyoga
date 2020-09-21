@@ -36,7 +36,7 @@ fields:
   - name: name
     type: text
     config:
-      required: false
+      required: true
     label: Kuvaus
     description: Sijainnin kuvaus (näkyy sivulla)
   - name: address
@@ -58,15 +58,16 @@ fields:
     required: true
   label: Ilmoittautuminen
   description: Linkki verkkokauppaan. Voi myös olla sähköposti (<strong>mailto:</strong>osoite@tähän)
+  default: https://holvi.com/shop/nordicflowacroyoga/
 - name: weight
   type: number
   label: Painoarvo
   default: 0
   required: true
   config:
-    min: 
-    max: 
-    step: 
+    min: 0
+    max: 100
+    step: 1
   description: 'Aktiviteetit listataan tämän määrittelemässä järjestyksessä. Pienin
     ensin. '
 - name: draft
