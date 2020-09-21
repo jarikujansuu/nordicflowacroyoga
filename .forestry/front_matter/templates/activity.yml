@@ -62,7 +62,7 @@ fields:
 - name: weight
   type: number
   label: Painoarvo
-  default: 20
+  default: 50
   required: true
   config:
     min: 0
