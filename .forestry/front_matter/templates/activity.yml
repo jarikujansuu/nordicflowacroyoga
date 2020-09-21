@@ -85,3 +85,5 @@ fields:
     time_format: hh:mm:ssZZ
     display_utc: false
     export_format: YYYY-MM-DDThh:mm:ssZZ
+pages:
+- content/activity/testi.md
