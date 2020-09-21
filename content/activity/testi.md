@@ -7,7 +7,7 @@ teacher_names = "Karoliina Lämsä"
 teachers = []
 time = "joka päivä"
 title = "Testi"
-weight = nil
+weight = 20
 [location]
 address = "Keuruuntie 7, Helsinki"
 name = "Meillä"
