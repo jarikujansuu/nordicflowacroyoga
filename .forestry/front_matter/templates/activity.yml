@@ -1,4 +1,86 @@
 ---
 label: Activity
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Nimi
+- name: teachers
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: teacher
+  label: Opettajat
+  hidden: true
+- name: teacher_names
+  type: text
+  config:
+    required: true
+  label: Opettajat (nimet)
+  default: Karoliina Lämsä
+- name: time
+  type: text
+  config:
+    required: true
+  label: Aika (kuvaus, vapaa teksti)
+- name: location
+  type: field_group
+  config: {}
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Kuvaus
+    description: Sijainnin kuvaus (näkyy sivulla)
+  - name: address
+    type: text
+    config:
+      required: true
+    label: Osoite
+    description: Osoite (Google karttalinkkiä varten)
+  label: Sijainti
+- name: price
+  type: text
+  config:
+    required: true
+  label: Hinta
+  description: Hinta. Vapaa teksi eli esim "20€ kerta, 3 kertaa 50€".
+- name: signin
+  type: text
+  config:
+    required: true
+  label: Ilmoittautuminen
+  description: Linkki verkkokauppaan. Voi myös olla sähköposti (<strong>mailto:</strong>osoite@tähän)
+- name: weight
+  type: number
+  label: Painoarvo
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  description: 'Aktiviteetit listataan tämän määrittelemässä järjestyksessä. Pienin
+    ensin. '
+- name: draft
+  type: boolean
+  label: Luonnos
+  default: false
+  description: Luonnoksia ei näytetä vielä sivulla
+- name: expiryDate
+  type: datetime
+  label: Milloin poistetaan sivulta
+  description: ''
+  config:
+    required: false
+    date_format: D.M.YYYY
+    time_format: hh:mm:ssZZ
+    display_utc: false
+    export_format: YYYY-MM-DDThh:mm:ssZZ
