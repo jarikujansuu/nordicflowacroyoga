@@ -87,4 +87,5 @@ fields:
     display_utc: false
     export_format: YYYY-MM-DDThh:mm:ssZZ
 pages:
+- content/activity/akrojooga-alkeisjatko-tyopaja.md
 - content/activity/testi.md
