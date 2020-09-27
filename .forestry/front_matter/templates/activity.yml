@@ -106,12 +106,14 @@ fields:
       display_utc: false
       export_format: YYYY-MM-DDThh:mm:ssZZ
   - name: dates
-    type: blocks
-    label: Päivämäärät
-    template_types: []
+    type: list
     config:
-      min: 0
+      use_select: false
+      min: 1
       max: 
+    label: Päivämäärät
+    description: Lista yksittäisiä päivämääriä. Tässä pitää käyttää teksiä eli esim
+      joulu olisi. Kellonajalla ei ole väliä eli laita vain päivämäärät<br><br>2020-12-24T18:00:00.000+03:00
   label: Päivämäärät
   description: Joko alku &amp; loppu tai lista yksittäisiä päivämääriä
 pages:
