@@ -118,5 +118,4 @@ fields:
   description: Joko alku &amp; loppu tai lista yksittäisiä päivämääriä
 pages:
 - content/activity/akrojooga-alkeisjatko-tyopaja.md
-- content/activity/testi-2.md
 - content/activity/testi.md
