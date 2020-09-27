@@ -71,11 +71,6 @@ fields:
     required: true
   description: 'Aktiviteetit listataan tämän määrittelemässä järjestyksessä. Pienin
     ensin. '
-- name: draft
-  type: boolean
-  label: Luonnos
-  default: false
-  description: Luonnoksia ei näytetä vielä sivulla
 - name: expiryDate
   type: datetime
   label: Milloin poistetaan sivulta
@@ -86,6 +81,39 @@ fields:
     time_format: hh:mm:ssZZ
     display_utc: false
     export_format: YYYY-MM-DDThh:mm:ssZZ
+- name: dates
+  type: field_group
+  config: {}
+  fields:
+  - name: start
+    type: datetime
+    description: Pidemmän kurssin tms aloituspäivämäärä
+    config:
+      required: false
+      date_format: D.M.YYYY
+      time_format: hh:mm:ssZZ
+      display_utc: false
+      export_format: YYYY-MM-DDThh:mm:ssZZ
+    label: Alkaen
+  - name: end
+    type: datetime
+    label: Loppumispäivämäärä
+    description: ''
+    config:
+      required: false
+      date_format: D.M.YYYY
+      time_format: hh:mm:ssZZ
+      display_utc: false
+      export_format: YYYY-MM-DDThh:mm:ssZZ
+  - name: dates
+    type: blocks
+    label: Päivämäärät
+    template_types: []
+    config:
+      min: 0
+      max: 
+  label: Päivämäärät
+  description: Joko alku &amp; loppu tai lista yksittäisiä päivämääriä
 pages:
 - content/activity/akrojooga-alkeisjatko-tyopaja.md
 - content/activity/testi.md
