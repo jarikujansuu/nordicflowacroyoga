@@ -1,7 +1,6 @@
 +++
-draft = true
 expiryDate = 2020-11-08T10:00:00Z
-price = "1 työpaja 35e, 2 työpajaa 60e"
+price = "1 työpaja 35€, 2 työpajaa 60€"
 signin = "https://holvi.com/shop/nordicflowacroyoga/section/alkeistyopajat/"
 teacher_names = "Karoliina Lämsä"
 teachers = []
@@ -9,7 +8,7 @@ time = "klo.12.15-14.15 ja klo.15.15-17.15"
 title = "Akrojoogan alkeis- ja alkeisjatko työpajat"
 weight = 1
 [dates]
-dates = ["7.11.2020"]
+dates = ["2020-11-07"]
 end = ""
 start = ""
 [location]
