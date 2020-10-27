@@ -12,7 +12,7 @@ dates = ["2020-11-07"]
 end = ""
 start = ""
 [location]
-address = "https://www.google.com/maps/place/Kaapelitehdas/@60.1619912,24.9035428,15z/data=!4m5!3m4!1s0x0:0xdd1747631829f57a!8m2!3d60.1619912!4d24.9035428"
+address = "Kaapelitehdas, Tallberginkatu 1, Helsinki"
 name = "Kaapelitehdas"
 
 +++
