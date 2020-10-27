@@ -1,7 +1,7 @@
 +++
 draft = true
 expiryDate = 2020-11-08T10:00:00Z
-price = "35€"
+price = "1 työpaja 35e, 2 työpajaa 60e"
 signin = "https://holvi.com/shop/nordicflowacroyoga/section/alkeistyopajat/"
 teacher_names = "Karoliina Lämsä"
 teachers = []
