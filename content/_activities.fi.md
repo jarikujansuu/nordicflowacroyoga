@@ -1,5 +1,5 @@
 ---
 Title: Tunnit ja tapahtumat
-draft: true
+draft: false
 
 ---
