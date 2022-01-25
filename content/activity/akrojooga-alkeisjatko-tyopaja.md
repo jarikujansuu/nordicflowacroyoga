@@ -1,4 +1,5 @@
 +++
+draft = true
 expiryDate = 2020-11-08T10:00:00Z
 price = "1 työpaja 35€, 2 työpajaa 60€"
 signin = "https://holvi.com/shop/nordicflowacroyoga/section/alkeistyopajat/"
