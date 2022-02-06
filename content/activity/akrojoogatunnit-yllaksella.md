@@ -16,8 +16,8 @@ address = "Vaeltajantie 2, 95980 Ylläsjärvi"
 name = "AAVA Lapland joogastudio"
 
 +++
-Näillä tunnilla pääset tutustumaan akrojoogan perusliikkeisiin, etkä tarvitse aikaisempaa kokemusta lajista.
+Näillä tunneilla pääset tutustumaan akrojoogan perusliikkeisiin, etkä tarvitse aikaisempaa kokemusta lajista.
 
-Akrojoogan parissa pääset varmasti sekä yllättämään että ylittämään itsesi!
+Akrojoogan parissa pääset varmasti yllättämään ja ylittämään itsesi!
 
-Suosittelemme että tulet tunnille oman parin kuten puolison tai ystävän kanssa. Teemme harjoituksia 2-4 henkilön ryhmissä.
+Suosittelemme että tulet tunnille oman parin, kuten puolison tai ystävän kanssa. Teemme harjoituksia 2-4 henkilön ryhmissä.
