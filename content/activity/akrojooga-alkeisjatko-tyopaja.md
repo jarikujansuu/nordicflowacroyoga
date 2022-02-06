@@ -14,7 +14,7 @@ end = "2022-03-07T02:00:00+0200"
 start = "2022-02-28T12:00:00+0200"
 [location]
 address = "Vaeltajantie 2, 95980 Ylläsjärvi"
-name = "AAVA Lapland "
+name = "AAVA Lapland joogastudio"
 
 +++
 Näillä tunnilla pääset tutustumaan akrojoogan perusliikkeisiin, etkä tarvitse aikaisempaa kokemusta lajista.

@@ -4,9 +4,9 @@ price = "25e"
 signin = "https://www.varaaheti.fi/aavalapland/fi"
 teacher_names = "Karoliina Lämsä"
 teachers = []
-time = "maanantaisin klo.19.00-20.30"
+time = "maanantaisin 19:00-20:30"
 title = "Akrojoogatunnit Ylläksellä"
-weight = 5
+weight = 1
 [dates]
 dates = []
 end = "2022-03-07T12:00:00+0200"
