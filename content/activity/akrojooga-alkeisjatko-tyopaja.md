@@ -1,4 +1,5 @@
 +++
+draft = true
 expiryDate = ""
 price = "25e"
 signin = "https://www.varaaheti.fi/aavalapland/fi"
