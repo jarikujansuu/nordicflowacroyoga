@@ -13,11 +13,13 @@
           <li class="nav-item">
             <a class="nav-link" href="#">{{ .Site.Params.home }}</a>
           </li>
+<!-- Activities - poistettu
           {{ with .Site.GetPage "/_activities" }}
           <li class="nav-item">
             <a class="nav-link" href="#activities">{{ .Title }}</a>
           </li>
           {{ end }}
+-->
           {{ with .Site.GetPage "/_acroyoga" }}
           <li class="nav-item">
             <a class="nav-link" href="#acroyoga">{{ .Title }}</a>
@@ -63,6 +65,7 @@
       </div>
     </div>
 
+<!-- Activities - poistettu
     {{ with .Site.GetPage "/_activities" }}
     <div class="section activities container pt-5" id="activities">
       <div class="row align-content-center">
@@ -71,6 +74,8 @@
             <h1 class="title">{{ .Title }}</h1>
             <div class="addition">{{ .Params.SubTitle }}</div>
           </div>
+-->
+<!--
           <div class="content">
             {{ with .Site.GetPage "/_covid" }}
               <div class="">
@@ -87,19 +92,22 @@
             {{ end }}
             {{.Content}}
           </div>
+-->
+<!-- Activities - poistettu jatkuu
           <hr class="dashed"/>
           <div class="activities row">
-<!--            {-{ range where (.Site.RegularPages.ByParam "startDate") "Section" "activity" }-}-->
             {{ range where (.Site.RegularPages.ByWeight) "Section" "activity" }}
               <div class="activity col-sm-12 col-md-6 col-lg-4">
                 {{ .Render "card" }}
               </div>
             {{ end }}
           </div>
+
         </div>
       </div>
     </div>
     {{ end }}
+    -->
 
     {{ with .Site.GetPage "/_acroyoga" }}
     <div class="section about-acroyoga container-fluid pt-5" id="acroyoga">
