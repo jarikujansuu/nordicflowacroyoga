@@ -1,5 +1,5 @@
 +++
-expiryDate = ""
+expiryDate = "2022-04-07"
 price = "25e"
 signin = "https://www.varaaheti.fi/aavalapland/fi"
 teacher_names = "Karoliina Lämsä"
